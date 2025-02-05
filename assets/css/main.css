@@ -2303,3 +2303,9 @@ a.back-to-top:hover, a.back-to-top:focus {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+
+.img-fluid-team {
+  width: 100%;      /* Ensures responsiveness */
+  height: 450px;    /* Set desired fixed height */
+  object-fit: cover; /* Ensures the image fills the rectangle while maintaining aspect ratio */
+}
