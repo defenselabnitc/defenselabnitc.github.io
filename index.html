@@ -486,7 +486,7 @@
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/shraddha-pink.jpeg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -531,9 +531,9 @@
             <!-- Team Item Ends -->
           </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/6.jpg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -555,9 +555,9 @@
             <!-- Team Item Ends -->
           </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="0.8s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/3.jpg" alt="" object-fit: cover;>
                 <div class="team-overlay">
@@ -578,9 +578,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/2.JPG" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -601,9 +601,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/4.jpg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -624,9 +624,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/5.jpg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -647,9 +647,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/8.jpeg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -670,9 +670,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/7.jpg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -693,9 +693,9 @@
             </div>
             <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-lg-4 team-member hidden">
             <!-- Team Item Starts -->
-            <div class="team-item wow fadeInUp" data-wow-delay="1.2s">
+            <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
               <div class="team-img">
                 <img class="img-fluid-team" src="assets/img/team/img10.jpg" alt="" style="height: 450px"; object-fit: cover;>
                 <div class="team-overlay">
@@ -716,7 +716,24 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Whole Team</a>
+        <!-- <a href="#" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Whole Team</a> -->
+
+        <p id="toggleButton" class="show-more btn btn-common mt-30 wow fadeInUp">Show Full Team</p>
+
+        <script>
+            const button = document.getElementById('toggleButton');
+            const hiddenMembers = document.querySelectorAll('.team-member.hidden');
+            let expanded = false;
+    
+            button.addEventListener('click', () => {
+                hiddenMembers.forEach(member => {
+                    member.style.display = expanded ? 'none' : 'block';
+                });
+                button.textContent = expanded ? 'Show Full Team' : 'Show Less';
+                expanded = !expanded;
+            });
+        </script>
+        
       </div>
     </section>
     <!-- Team Section End -->
