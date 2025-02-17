@@ -58,6 +58,10 @@ ul li, ol li {
 }
 
 
+.hidden {
+  display: none;
+}
+
 .hero-heading {
   font-size: 40px;
   font-weight: 700;
