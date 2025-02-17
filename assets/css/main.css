@@ -2309,3 +2309,9 @@ a.back-to-top:hover, a.back-to-top:focus {
   height: 450px;    /* Set desired fixed height */
   object-fit: cover; /* Ensures the image fills the rectangle while maintaining aspect ratio */
 }
+
+.qazaq
+{
+    height: 90px;
+    
+}
